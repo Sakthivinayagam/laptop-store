@@ -1,0 +1,185 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+nav{
+	background-color: #1DF607;
+	color: white;
+	padding: 20px 50px;
+}
+
+.navtop{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.search{
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #DC2A88;
+	border-radius: 10px;
+}
+
+.searchinput{
+	border: none;
+	background-color: transparent;
+}
+
+.navbottom{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menuitem{
+	margin-right: 40px;
+	color: #310fba;
+	cursor: pointer;
+}
+
+.slider{
+	background-color: #16b3ee;
+	overflow: hidden;
+}
+
+.sliderwrapper{
+	display: flex;
+	width: 580vw;
+	transition: all 1s ease-in-out;
+}
+
+.slideritem{
+	display: flex;
+	align-items: center;
+	width: 100vw;
+	justify-content: center;
+	position: relative;
+}
+
+.slidertitle{
+	position: absolute;
+	top: 10%;
+	right: 0%;
+	font-size: 50px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.sliderprice{
+	position: absolute;
+	top: 10%;
+	left: 2%;
+	font-size: 30px;
+	font-weight: 100;
+	text-align: center;
+	color: brown;
+	border: 1px solid;
+}
+
+.buybutton{
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	right: 10%;
+}
+.buybutton:hover{
+	background-color: yellow;
+}
+
+.features{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px;
+	background-color: #16ee92;
+}
+
+.featureimage{
+	width: 100px;
+	height: 100px;
+}
+
+.feature{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.featuretitle{
+	font-size: 20px;
+	font-weight: 600;
+	margin: 20px;
+}
+
+.featuredescription{
+	width: 50%;
+	height: 100px;
+}
+
+.best{
+	padding: 50px;
+	text-align: center;
+	color: yellow;
+	background-image: url("https://images.unsplash.com/photo-1610465299993-e6675c9f9efa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&w=1000&q=80");
+}
+
+.brands{
+	padding: 30px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #9FE2BF;
+}
+
+.about{
+	background-color: #40E0D0;
+}
+
+@media screen and (max-width:480px){
+	nav{
+		padding: 20px;
+	}
+
+	.search{
+		display: none;
+	}
+
+	.navbottom{
+		flex-wrap: wrap;
+	}
+
+	.menuitem{
+		margin: 20px;
+		font-weight: 700;
+		font-size: 20px;
+	}
+
+	.sliderimage{
+		width: 80%;
+	}
+
+	.slidertitle{
+		display: none;
+	}
+
+	.sliderprice{
+		top: unset;
+		bottom: 0;
+		left: 0;
+		font-size: 18px;
+	}
+
+	.buybutton{
+		right: 0;
+		top: 5%;
+		width: 60px;
+		height: 30px;
+	}
+
+	.features{
+		flex-direction: column;
+	}
+}
